@@ -211,7 +211,7 @@
                             <tr class="table-repeater-row table-repeater-empty-row">
                                 <td
                                     colspan="{{ count($headers) + intval($hasActions) }}"
-                                    class="table-repeater-column table-repeater-empty-column p-4 w-px text-center italic"
+                                    class="table-repeater-column table-repeater-empty-column p-4 w-px text-left italic"
                                 >
                                     {{ $emptyLabel ?: trans('table-repeater::components.repeater.empty.label') }}
                                 </td>

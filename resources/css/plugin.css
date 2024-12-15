@@ -10,6 +10,28 @@
     @apply not-sr-only;
 }
 
+.table-repeater-container {
+  @apply ring-1 ring-gray-100 rounded-lg ;
+}
+
+.table-repeater-header {
+    @apply bg-primary-100;
+}
+
+.table-repeater-header-column {
+    @apply  px-3 py-2 first:rounded-tl-lg last:rounded-tr-lg;
+}
+
+.table-repeater-column {
+    @apply px-3 py-3 border-b border-gray-100;
+  
+  
+  }
+  
+  .table-repeater-row:last-child .table-repeater-column {
+    @apply border-b-0;
+  }
+
 @media (min-width: calc(theme('screens.sm') + 1px)) {
     .table-repeater-component.break-point-sm {
         &.streamlined {
@@ -30,7 +52,7 @@
         }
 
         .table-repeater-row {
-            @apply divide-x divide-gray-950/5 dark:divide-white/20;
+            @apply divide-gray-950/5 dark:divide-white/20;
         }
 
         .table-repeater-row-actions {
@@ -59,7 +81,7 @@
         }
 
         .table-repeater-row {
-            @apply divide-x divide-gray-950/5 dark:divide-white/20;
+            @apply divide-gray-950/5 dark:divide-white/20;
         }
 
         .table-repeater-row-actions {
@@ -88,7 +110,7 @@
         }
 
         .table-repeater-row {
-            @apply divide-x divide-gray-950/5 dark:divide-white/20;
+            @apply divide-gray-950/5 dark:divide-white/20;
         }
 
         .table-repeater-row-actions {
@@ -117,7 +139,7 @@
         }
 
         .table-repeater-row {
-            @apply divide-x divide-gray-950/5 dark:divide-white/20;
+            @apply divide-gray-950/5 dark:divide-white/20;
         }
 
         .table-repeater-row-actions {
@@ -146,7 +168,7 @@
         }
 
         .table-repeater-row {
-            @apply divide-x divide-gray-950/5 dark:divide-white/20;
+            @apply divide-gray-950/5 dark:divide-white/20;
         }
 
         .table-repeater-row-actions {
