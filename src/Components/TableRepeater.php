@@ -84,14 +84,14 @@ class TableRepeater extends Repeater
         $this->relationship = $name ?? $this->getName();
         $this->modifyRelationshipQueryUsing = $modifyQueryUsing;
 
-        // // don't use relationship on form filled
-        // $this->afterStateHydrated(function (Repeater $component) {
-        //     if (! is_array($component->hydratedDefaultState)) {
-        //         return;
-        //     }
+        // don't use relationship on form filled
+        $this->afterStateHydrated(function (Repeater $component) {
+            if (! is_array($component->hydratedDefaultState)) {
+                return;
+            }
 
-        //     $component->mergeHydratedDefaultStateWithChildComponentContainerState();
-        // });
+            // $component->mergeHydratedDefaultStateWithChildComponentContainerState();
+        });
 
         $this->loadStateFromRelationshipsUsing(static function (Repeater $component) {
             $component->clearCachedExistingRecords();
